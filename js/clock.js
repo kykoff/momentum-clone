@@ -1,4 +1,4 @@
-const clock = document.querySelector(".title__clock span");
+const clock = document.querySelector(".title__clock");
 
 function clockHandler() {
     const hour = String(new Date().getHours()).padStart(2,"0");

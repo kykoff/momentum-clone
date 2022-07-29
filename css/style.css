@@ -1,11 +1,20 @@
-@import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Open+Sans&family=Roboto:wght@300;400;500;700&display=swap');
+
+@import 'reset.css';
+
+@import "face.css";
+@import "quotes.css";
+
+
+
 
 body {
     font-family: 'Nunito', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     color: white;
+    overflow: hidden;
+    position: relative;
 }
 
 .hidden {
@@ -13,58 +22,8 @@ body {
 }
 
 
-main {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-    text-align: center;
-}
 
 
-.main-form h1 {
-    color: white;
-    font-size: 60px;
-}
-
-input {
-    font-size: 60px;
-    background: none;
-    border: none;
-    background: none;
-    text-align: center;
-    color: white;
-}
-
-.main-form input {
-    border-bottom: 4px solid white;
-}
-
-input:focus {
-    outline: none;
-}
-
-.title__clock  {
-    font-size: 150px;
-}
-
-.title__greeting {
-    font-size: 50px;
-    margin-bottom: 40px;
-}
-
-.sub-form h1 {
-    font-size: 35px;
-}
-
-.sub-form input {
-    font-size: 40px;
-    border-bottom: 3px solid white;
-}
 
 
 
