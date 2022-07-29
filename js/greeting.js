@@ -46,7 +46,18 @@ function paintTitle() {
     const userName = localStorage.getItem("name");
     title.classList.remove(HIDDEN);
     subForm.classList.remove(HIDDEN);
-    greeting.innerHTML = `Hello ${userName}`;
+
+    const hour = new Date().getHours();
+    if (hour >= 5 && hour < 12) {
+        greeting.innerHTML = `Good morning, ${userName}.`;
+    } else if (hour >= 12 && hour < 18) {
+        greeting.innerHTML = `Good afternoon, ${userName}.`;
+    } else if (hour >= 18 && hour < 22) {
+        greeting.innerHTML = `Good evening, ${userName}.`;
+    } else {
+        greeting.innerHTML = `Good night, ${userName}.`;
+    }
+    
 }
 
 // get info from local storage

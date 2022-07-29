@@ -8,37 +8,37 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
+    <main>
+        <form class="main-form name-form">
+            <h1>Hello, what's your name?</h1>
+            <input type="text" />
+        </form>
 
-    <form class="main-form name-form">
-        <h1>Hello, what's your name?</h1>
-        <input type="text" />
-    </form>
+        <form class="main-form email-form hidden">
+            <h1>Enter your email</h1>
+            <input type="email" />
+        </form>
 
-    <form class="main-form email-form hidden">
-        <h1>Enter your email</h1>
-        <input type="email" />
-    </form>
+        <form class="main-form password-form hidden">
+            <h1>Enter your password</h1>
+            <input type="password" />
+        </form>
 
-    <form class="main-form password-form hidden">
-        <h1>Enter your password</h1>
-        <input type="password" />
-    </form>
-
-    <div class="title hidden">
-        <div class="title__clock">
-            <span>00:00</span>
+        <div class="title hidden">
+            <div class="title__clock">
+                <span>00:00</span>
+            </div>
+        
+            <div class="title__greeting">
+                <span></span>
+            </div>
         </div>
-    
-        <div class="title__greeting">
-            <span></span>
-        </div>
-    </div>
 
-    <form class="sub-form hidden">
-        <h1>What is your main focus for today?</h1>
-        <input type="text" />
-    </form>
-
+        <form class="sub-form hidden">
+            <h1>What is your main focus for today?</h1>
+            <input type="text" />
+        </form>
+    </main>
 
     <script src="js/form.js"></script>
     <script src="js/clock.js"></script>
