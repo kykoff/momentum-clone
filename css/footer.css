@@ -1,0 +1,70 @@
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+/* quotes */
+
+.quotes {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+}
+
+.quotes span {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* .quotes에 absolute를 주게 되면 footer의 전체적인 배열이 깨짐
+    그래서 span에만 따로
+*/    
+
+.quotes__quote {
+    transition: 0.5s ease-in-out;
+}
+
+.quotes:hover .quotes__quote{
+    bottom: 30px;
+}
+
+.quotes span:first-child {
+    font-size: 20px;
+}
+
+
+.quotes__author {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0);
+    transition: 0.5s ease-in;
+    font-size: 15px;
+}
+
+.quotes:hover .quotes__author{
+    color: white;
+}
+
+
+.todo-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* email */
+
+.user-email {
+    width: 33%;
+}
+

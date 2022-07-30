@@ -1,0 +1,54 @@
+.todo-box {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+}
+
+
+.todo {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    border-radius: 10px;
+    min-height: 100px;;
+    padding: 20px;
+}
+
+
+.todo__header {
+    display: flex;
+    color: black;
+    font-size: 20px;
+}
+
+.todo-form input {
+    width: 100%;
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* position으로 input을 위치 시켰더니 layer가 달라져 li가 input의 위치로 넘어옴
+*/
+
+.todo ul {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.todo li {
+    margin-top: 5px;
+}
+
+.todo ul li button{
+    background: none;
+    border: none;
+    color: rgba(0,0,0,0.5);
+    margin-right: 5px;
+}
