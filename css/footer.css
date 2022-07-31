@@ -74,5 +74,7 @@ footer {
 .user-email a {
     text-decoration: none;
     color: white;
+    position: fixed;
+    bottom: 15px;
 }
 
