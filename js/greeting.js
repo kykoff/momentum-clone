@@ -5,6 +5,7 @@ const mustTitleBox = document.querySelector(".must-form__title");
 const must = document.querySelector(".must");
 const mustTitle = document.querySelector(".must-title");
 const email = document.querySelector(".user-email");
+const emailBtn = document.querySelector(".user-email a");
 const footer = document.querySelector("footer");
 const mustFormBox = document.querySelector(".must-form__input");
 
@@ -34,15 +35,21 @@ function nameSubmitHandler(e) {
     emailForm.classList.remove(HIDDEN);
 }
 
+function paintEmail(email) {
+    const span = document.createElement("span");
+    span.innerHTML = `${email}       <i class="fa-solid fa-envelope"></i>`;
+    emailBtn.appendChild(span);
+}
+
 
 function emailSubmitHandler(e) {
     e.preventDefault();
     localStorage.setItem("email", emailInput.value);
+    const userEmail = emailInput.value;
     emailInput.value="";
     emailForm.classList.add(HIDDEN);
     passwordForm.classList.remove(HIDDEN);
-    const span = document.createElement("span");
-    span.innerText = emailInput.value;
+    paintEmail(userEmail);
 }
 
 
@@ -87,6 +94,7 @@ if (savedUserName !== null && savedUserEmail !== null && savedUserPassword !== n
     passwordForm.classList.add(HIDDEN);
     footer.classList.remove(HIDDEN);
     paintTitle();
+    paintEmail(savedUserEmail);
 } else {
     title.classList.add(HIDDEN);
     nameForm.addEventListener("submit",nameSubmitHandler);
