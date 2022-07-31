@@ -54,7 +54,7 @@ footer {
 .todo-btn {
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 10px;
     font-size: 20px;
     background: none;
     border: none;
@@ -65,6 +65,14 @@ footer {
 /* email */
 
 .user-email {
+    display: flex;
+    padding-left: 20px;
+    padding-bottom: 10px;
     width: 33%;
+}
+
+.user-email a {
+    text-decoration: none;
+    color: white;
 }
 

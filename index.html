@@ -34,13 +34,31 @@
             </div>
         </div>
 
-        <form class="sub-form hidden">
-            <h1>What is your main focus for today?</h1>
-            <input type="text" />
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+
+        <form class="must-form">
+            <div class="must-form__input">
+                <h1>What is your main focus for today?</h1>
+                <input type="text" />
+            </div>
+
+            <div class="must-form__title hidden">
+                <h3 class="must-title">You must</h3>
+                <div class="must"></div>
+            </div>
+
         </form>
 
-        <footer>
-            <div class="user-email"></div>
+        <footer class="hidden">
+            <div class="user-email">
+                <a href="mail.google.com">
+                    
+                </a>
+            </div>
+            
             <div class="quotes">
                 <span class="quotes__quote"></span>
                 <span class="quotes__author"></span>
@@ -48,14 +66,13 @@
 
             <div class="todo-box">
                 <button class="todo-btn">Todo</button>
-                <div class="todo hidden">
-                    
+                <div class="todo hidden">             
                     <header class="todo__header">
                         <h1>Today</h1>
                     </header>
                     <ul></ul>
                     <form class="todo-form">
-                        <input type="text" placeholder="New Todo"/>
+                        <input required type="text" placeholder="New Todo"/>
                     </form>
                 </div>
             </div>
@@ -70,6 +87,7 @@
     <script src="js/quotes.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/weather.js"></script>
 
     <script src="https://kit.fontawesome.com/bf1c397a23.js" crossorigin="anonymous"></script>
 </body>

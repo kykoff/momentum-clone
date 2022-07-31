@@ -42,11 +42,50 @@ input:focus {
     margin-bottom: 60px;
 }
 
-.sub-form h1 {
+.must-form h1 {
     font-size: 35px;
 }
 
-.sub-form input {
+.must-form input {
     font-size: 40px;
     border-bottom: 3px solid white;
+}
+
+.must {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 20px;
+}
+
+
+.must-title {
+    font-size: 30px;
+}
+
+.must h1 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+
+.must button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    height: 0px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    position: relative;
+    bottom: 5px;
+
+}
+
+
+
+#weather {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
 }
